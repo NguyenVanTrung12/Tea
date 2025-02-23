@@ -347,6 +347,7 @@ table.table .avatar {
 .dangnhap{
     margin: 0 5px;
     color: white;
+    text-decoration: none  ;
 }
 .dangnhap:hover{
     color: #000 !important;
