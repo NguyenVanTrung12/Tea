@@ -14,6 +14,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,26 +35,16 @@
                             <div class="dropdown text-align-right">
                                 <button class="dropbtn">Quản lý</button>
                                 <div class="dropdown-content">
-                                    <a class="" asp-area="" asp-controller="Config" asp-action="Edit">Config</a>
-                                    <a class="" asp-area="" asp-controller="Page" asp-action="Index">Danh mục Menu</a>
-                                    <a class="" asp-area="" asp-controller="Contact" asp-action="Index">Liên hệ, phản hồi</a>
+                                    <a class="" asp-area="" asp-controller="Config" asp-action="Edit">Config</a>                                
                                     <a class="" asp-area="" asp-controller="Advertise" asp-action="Index">Quảng cáo</a>
                                     <a class="" asp-area="" asp-controller="UserAdmin" asp-action="Index">Người dùng</a>
-                                    <a class="" asp-area="" asp-controller="User" asp-action="Index">Đổi mật khẩu</a>
-                                    <a class="" asp-area="" asp-controller="PhieuDK" asp-action="Index">DS gửi phiếu đăng ký</a>
-                                    <a class="" asp-area="" asp-controller="User" asp-action="Index">Báo cáo truy cập</a>
                                 </div>
                             </div>
                             <div class="dropdown text-align-right">
                                 <button class="dropbtn">Quản lý sản phẩm</button>
                                 <div class="dropdown-content">
                                     <a href="{{ route('categories.index') }}">Danh mục sản phẩm</a>
-                                    <a class="" asp-area="" asp-controller="Brand" asp-action="Index">Thương hiệu</a>
-                                    <a class="" asp-area="" asp-controller="Supplier" asp-action="Index">Nhà cung cấp</a>
-                                    <a class="" asp-area="" asp-controller="Color" asp-action="Index">Màu sắc</a>
-                                    <a class="" asp-area="" asp-controller="Size" asp-action="Index">Kích cỡ</a>
-                                    <a class="" asp-area="" asp-controller="ImageDetail" asp-action="Index">Hình ảnh</a>
-                                    <a class="" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                                    <a href="{{ route('news.index') }}">Quản lý tin tức</a>                                  
                                 </div>
                             </div>
                         </ul>
