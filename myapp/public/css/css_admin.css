@@ -87,7 +87,7 @@ body {
     padding: 16px 30px;
     margin: -20px -25px 10px;
     border-radius: 1px 1px 0 0;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247); */
 }
 
     .table-title h2 {
@@ -345,6 +345,7 @@ table.table .avatar {
     font-weight: normal;
 }
 .dangnhap{
+    text-decoration: none;
     margin: 0 5px;
     color: white;
     text-decoration: none  ;
@@ -366,7 +367,7 @@ table.table .avatar {
     color: #fff;
     padding: 5px 30px;
     margin: -20px -25px 10px;
-    border-radius: 1px 1px 0 0;
+    /* border-radius: 1px 1px 0 0; */
     /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);*/
 }
 
@@ -474,4 +475,43 @@ table.table tr th {
 }
 .TableView_view {
     width: 70px;
+}
+
+/* Thay đổi css của thanh lọc ở đây */
+.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.form-inline .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-inline .form-control {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 8px;
+}
+
+.form-inline .btn {
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
 }
