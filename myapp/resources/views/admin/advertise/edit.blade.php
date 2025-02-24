@@ -5,9 +5,9 @@
     <div class="card shadow-lg p-4 border-0" style="width: 60%">
         <h3 class="text-center mb-4">Sửa Quảng Cáo</h3>
         <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary" style="margin: 0px 5px;">Lưu</button>
-                <a href="{{ url()->previous() }}" class="btn btn-secondary">Quay lại</a>
-            </div>
+            <button type="submit" class="btn btn-primary" style="margin: 0px 5px;">Lưu</button>
+            <a href="{{ url()->previous() }}" class="btn btn-secondary">Quay lại</a>
+        </div>
         <form action="{{ route('advertise.update', $advertise->id) }}" method="POST" enctype="multipart/form-data">
             @csrf @method('PUT')
             <div class="mb-3">
@@ -17,6 +17,9 @@
             <div class="mb-3">
                 <label for="image" class="form-label">Hình ảnh</label>
                 <input type="file" class="form-control" id="image" name="image" value="{{ $advertise->image }}">
+                @if($advertise->image)
+                <img src="{{ asset('storage/' . $advertise->image) }}" alt="{{ $advertise->name }}" width="100">
+                @endif
             </div>
             <div class="mb-3">
                 <label for="content" class="form-label">Nội dung</label>

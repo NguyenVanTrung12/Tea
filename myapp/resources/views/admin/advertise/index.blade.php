@@ -44,7 +44,7 @@
                     </td>
                     <td class="TableView_Text">{{ $adv-> name }}</td>
                     <td class="TableView_Img">
-                        <img width="100px" src="@ad.Image" />
+                        <img width="100px" src="{{ asset('storage/' . $adv -> image)  }}" />
                     </td>
                     <td class="TableView_Text">{{$adv-> content }}</td>
                     <td class="TableView_Number">
