@@ -26,11 +26,10 @@
                         </span>
                     </th>
                     <th>Tên</th>
-                    <th>NewId</th>
+                    <th>Tin tức</th>
                     <th>Email</th>
-                    <th>Comment</th>
-                    <th>Date</th>
-                    <th>Rate</th>
+                    <th>Bình luận</th>
+                    <th>Đánh giá</th>
                     <th>Chức năng</th>
                 </tr>
             </thead>
@@ -44,21 +43,12 @@
                         </span>
                     </td>
                     <td class="TableView_Text">{{ $cm-> name }}</td>
-                    <td class="TableView_Text">{{ $cm-> new_id }}</td>
+                    <td class="TableView_Text">{{ optional($cm -> new) -> name }}</td>
                     <td class="TableView_Text">{{ $cm-> email }}</td>
                     <td class="TableView_Text">{{ $cm-> comment }}</td>
-                    <td class="TableView_Text">{{ $cm-> date }}</td>
                     <td class="TableView_Text">{{ $cm-> rate }}</td>
-                    </td>
-                    <td class="TableView_Number">
-                        @if ($adv->active == 1)
-                        <span class="badge bg-success">&bull;</span> Hiển thị
-                        @else
-                        <span class="badge bg-danger">&bull;</span> Tạm ẩn
-                        @endif
-                    </td>
                     <td class="TableView_Function">
-                        <form id="delete-form-{{ $cm->id }}" action="{{ route('comment.destroy', $adv->id) }}" method="POST" style="display: none;">
+                        <form id="delete-form-{{ $cm->id }}" action="{{ route('comment.destroy', $cm->id) }}" method="POST" style="display: none;">
                             @csrf
                             @method('DELETE')
                         </form>

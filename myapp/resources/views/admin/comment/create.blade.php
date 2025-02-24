@@ -10,6 +10,15 @@
         </div>
         <form action="{{ route('comment.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
+            <div class="mb-3 mt-3">
+                <label class="form-label">Bình luận</label>
+                <select name="newId" id="newId" class="form-control">
+                    <option value="">Xem bình luận</option>
+                    @foreach ($new as $n)
+                    <option value="{{ $n -> id }}">{{ $n -> name }}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="mb-3">
                 <label for="name" class="form-label">Tên</label>
                 <input type="text" class="form-control" id="name" name="name" required>

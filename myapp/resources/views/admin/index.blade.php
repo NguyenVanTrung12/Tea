@@ -35,33 +35,19 @@
                             <div class="dropdown text-align-right">
                                 <button class="dropbtn">Quản lý</button>
                                 <div class="dropdown-content">
-<<<<<<< HEAD
-                                    <a class="" asp-area="" asp-controller="Config" asp-action="Edit">Config</a>
-                                    <a class="" asp-area="" asp-controller="Page" asp-action="Index">Danh mục Menu</a>
-                                    <a class="" asp-area="" asp-controller="Contact" asp-action="Index">Liên hệ, phản hồi</a>
                                     <a href="{{ route('advertise.index') }}">Quảng cáo</a>
-=======
-                                    <a class="" asp-area="" asp-controller="Config" asp-action="Edit">Config</a>                                
-                                    <a class="" asp-area="" asp-controller="Advertise" asp-action="Index">Quảng cáo</a>
->>>>>>> 36e69de8345d54421d38b73ffcfae5d34c0fcb71
-                                    <a class="" asp-area="" asp-controller="UserAdmin" asp-action="Index">Người dùng</a>
+                                    <a href="{{ route('categories.index') }}">Danh mục</a>
+                                    <a href="{{ route('comment.index') }}">Bình luận</a>
+                                    <a href="{{ route('news.index') }}">Quản lý tin tức</a>
                                 </div>
                             </div>
                             <div class="dropdown text-align-right">
-                                <button class="dropbtn">Quản lý Danh mục</button>
+                                <button class="dropbtn">Quản lý</button>
                                 <div class="dropdown-content">
-<<<<<<< HEAD
+                                    <a href="{{ route('advertise.index') }}">Quảng cáo</a>
                                     <a href="{{ route('categories.index') }}">Danh mục</a>
-                                    <a class="" asp-area="" asp-controller="Brand" asp-action="Index">Thương hiệu</a>
-                                    <a class="" asp-area="" asp-controller="Supplier" asp-action="Index">Nhà cung cấp</a>
                                     <a href="{{ route('comment.index') }}">Bình luận</a>
-                                    <a class="" asp-area="" asp-controller="Size" asp-action="Index">Kích cỡ</a>
-                                    <a class="" asp-area="" asp-controller="ImageDetail" asp-action="Index">Hình ảnh</a>
-                                    <a class="" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
-=======
-                                    <a href="{{ route('categories.index') }}">Danh mục sản phẩm</a>
-                                    <a href="{{ route('news.index') }}">Quản lý tin tức</a>                                  
->>>>>>> 36e69de8345d54421d38b73ffcfae5d34c0fcb71
+                                    <a href="{{ route('news.index') }}">Tin tức</a>
                                 </div>
                             </div>
                         </ul>
