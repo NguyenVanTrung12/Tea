@@ -40,7 +40,7 @@
         <div class="mb-3">
             <div class="form-group">
                 <label asp-for="Image" class="control-label"><strong>Hình ảnh</strong></label>
-                <input  name="image" class="form-control" />
+                <input type="file"  name="image" class="form-control" />
                 <div>
                     <img src="" id="PictureView" width="100" />
                 </div>

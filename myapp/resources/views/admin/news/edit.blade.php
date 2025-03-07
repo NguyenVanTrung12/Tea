@@ -41,13 +41,12 @@
         <!-- Hình ảnh -->
         <div class="mb-3">
             <div class="form-group">
-                <label asp-for="Image" class="control-label"><strong>Hình ảnh</strong></label>
-                <input name="image" class="form-control" />
-                <div>
-                    <img src="" id="PictureView" width="100" />
-                </div>
+            <label for="image" class="form-label">Hình ảnh:</label>
+            <input type="file" class="form-control" id="image" name="image">
+            @if($news->image)
+                <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->name }}" width="100">
+            @endif
             </div>
-        </div>
         <!-- Tóm tắt -->
         <div class="mb-3">
             <label class="form-label"><b>Chi tiết:</b></label>
@@ -79,13 +78,16 @@
         </div>
         <!-- Kích hoạt -->
         <div class="mb-3 mt-3">
-            <label>
-                <input type="radio" name="active" id="input" value="1" {{ $news -> active == 1 ? 'checked' : '' }}>
-                Hiển thị
-                <input type="radio" name="active" id="input" value="0" {{ $news -> active == 0 ? 'checked' : '' }}>
-                Tạm ẩn
-            </label>
-        </div>
+    <label>
+        <input type="radio" name="active" value="1" {{ $news->active == 1 ? 'checked' : '' }}>
+        Hiển thị
+    </label>
+    <label>
+        <input type="radio" name="active" value="0" {{ $news->active == 0 ? 'checked' : '' }}>
+        Tạm ẩn
+    </label>
+</div>
+
 
         <!-- Button -->
         <div class="table-title" style="margin-top:20px">

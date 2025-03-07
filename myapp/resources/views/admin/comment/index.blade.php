@@ -3,7 +3,7 @@
 @section('main')
 
 <div class="container-fluid">
-    <h4>Quản Lí <b>Quảng Cáo</b></h4>
+    <h4>Quản Lí <b>Bình luận</b></h4>
     <div class="table-wrapper">
         <div class="table-title">
             <div class="row">

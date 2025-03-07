@@ -348,7 +348,6 @@ table.table .avatar {
     text-decoration: none;
     margin: 0 5px;
     color: white;
-    text-decoration: none  ;
 }
 .dangnhap:hover{
     color: #000 !important;
@@ -514,4 +513,10 @@ table.table tr th {
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #004085;
+}
+
+
+
+.user-info{
+    color: white;
 }
