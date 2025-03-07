@@ -62,7 +62,7 @@
                     <td class="TableView_Text">{{ $newsItem->title }}</td>
                     <td class="TableView_Text">{{ optional($newsItem->category)->name }}</td>
                     <td class="TableView_Img">
-                        <img width="100px" src="{{ $newsItem->image }}" alt="{{ $newsItem->title }}" />
+                    <img width="100px" src="{{ asset('storage/' . $newsItem->image) }}" alt="{{ $newsItem->name }}" />
                     </td>
                     <td class="TableView_Text">{{ $newsItem->created_at }}</td>
                     <td class="TableView_Number">

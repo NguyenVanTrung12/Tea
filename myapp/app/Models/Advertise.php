@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Advertise extends Model
 {
+    //
     use HasFactory;
     protected $table = 'advertise';
     protected $fillable = ['name' , 'image' , 'content' , 'position' , 'active'];
